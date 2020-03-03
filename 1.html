@@ -1,0 +1,38 @@
+<html>
+<head>
+
+	<style>
+
+		.block 	{
+		position: absolute;
+		left: 50px;
+		top: 50px;
+		}
+		
+	</style>
+	
+	<script>
+	
+		function add() {
+		x=parseInt(document.getElementById("counter").value);
+		document.getElementById("counter").value=x+10;
+		}
+		
+		intervalID=setInterval(timer, 1000);
+		
+		function timer() {
+		document.getElementById("counter").value++;
+		}
+		
+	</script>
+	
+</head>
+<body>
+	
+	<div class=block>
+	<button onClick=add()>+10</button><br><br>
+	Кол-во: <input type=text id=counter value=0 size=1>
+	</div>
+	
+</body>
+</html>
